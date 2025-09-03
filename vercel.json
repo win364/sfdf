@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/mines/user",
+      "dest": "/api/mines-user.js"
+    },
+    {
+      "src": "/mines/settings",
+      "dest": "/api/mines-settings.js"
+    },
+    {
+      "src": "/mines/sessions",
+      "dest": "/api/mines-sessions.js"
+    },
+    {
+      "src": "/mines/session",
+      "dest": "/api/mines-session.js"
+    },
+    {
+      "src": "/mines/round",
+      "dest": "/api/mines-round.js"
+    },
+    {
+      "src": "/mines/session/(.*)",
+      "dest": "/api/mines-session-id.js"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/api/manifest.js"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.svg"
+    },
+    {
+      "src": "/mines",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/mines/(.*)",
+      "dest": "/mines/$1"
+    },
+    {
+      "src": "/([0-9]+\\.[a-zA-Z0-9]+\\.chunk\\.js)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/([a-zA-Z0-9-]+\\.[a-zA-Z0-9]+\\.woff2)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/([a-zA-Z0-9-]+\\.[a-zA-Z0-9]+\\.woff)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/([a-zA-Z0-9-]+\\.[a-zA-Z0-9]+\\.mp3)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/([a-zA-Z0-9-]+\\.[a-zA-Z0-9]+\\.webp)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/([a-zA-Z0-9-]+\\.[a-zA-Z0-9]+\\.png)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/([a-zA-Z0-9-]+\\.[a-zA-Z0-9]+\\.svg)",
+      "dest": "/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
